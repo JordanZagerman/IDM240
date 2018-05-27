@@ -1,22 +1,33 @@
 
 @media screen and (min-width : 1px) and (max-width: 767px){
-.expand-link2 
+
+.mobile-container-div{
+	display: block;
+}
+
+.tablet-container-div
 {
 	display: none;
 }
-.main_svg_leather_couple{
-	display: block;
+.desktop-container-div{
+	display: none;
 }
 }
 
 /*Tablet*/
 @media screen and (min-width : 768px) and (max-width: 1023px) {
 	
-.spike_woman_desktop_svg
-.main_svg_leather_couple{
+.mobile-container-div{
 	display: none;
 }
 
+.tablet-container-div
+{
+	display: block;
+}
+.desktop-container-div{
+	display: none;
+}
 
 }
 
@@ -24,11 +35,15 @@
 /*Desktop*/
 @media screen and (min-width : 1024px) {
 
-.main_svg_leather_couple{
+.mobile-container-div{
 	display: none;
 }
 
-.spike_woman_desktop_svg {
+.tablet-container-div
+{
+	display: none;
+}
+.desktop-container-div{
 	display: block;
 }
 
