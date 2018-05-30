@@ -1,0 +1,50 @@
+
+@media screen and (min-width : 1px) and (max-width: 767px){
+
+.mobile-container-div{
+	display: block;
+}
+
+.tablet-container-div
+{
+	display: none;
+}
+.desktop-container-div{
+	display: none;
+}
+}
+
+/*Tablet*/
+@media screen and (min-width : 768px) and (max-width: 1023px) {
+	
+.mobile-container-div{
+	display: none;
+}
+
+.tablet-container-div
+{
+	display: block;
+}
+.desktop-container-div{
+	display: none;
+}
+
+}
+
+
+/*Desktop*/
+@media screen and (min-width : 1024px) {
+
+.mobile-container-div{
+	display: none;
+}
+
+.tablet-container-div
+{
+	display: none;
+}
+.desktop-container-div{
+	display: block;
+}
+
+}
