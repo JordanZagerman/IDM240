@@ -4,10 +4,17 @@
 	border-color: orange;
 }
 
-#left-eye {
+#left-eye, #right-eye {
 	position: relative;
-    animation-name: rainbow1;
-    animation-duration: 4s;
+    animation-name: flash1;
+    animation-duration: 50ms;
+    animation-iteration-count: infinite;
+}
+
+#the-big- piece, #big-piece-desktop {
+    position: relative;
+    animation-name: flash2;
+    animation-duration: 100ms;
     animation-iteration-count: infinite;
 }
 
@@ -19,22 +26,29 @@
     70%  {fill:blue;}
     90% {fill:purple;}
     100%   {fill:red;}
+}
+
+@keyframes flash1 {
+    0%   {fill:black;}
+
+    100%   {fill:white;}
     
 }
 
-#right-eye {
-	position: relative;
-    animation-name: rainbow2;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+@keyframes flash2 {
+    0%   {fill:white;}
+
+    100%   {fill:black;}
+    
 }
 
-@keyframes rainbow2 {
-    0%   {fill:red;}
-    25%  {fill:yellow;}
-    50%  {fill:blue;}
-    75%  {fill:green;}
-    100% {fill:red;}
+
+
+
+
+
+.folsom-street-flag {
+
 }
 
 
