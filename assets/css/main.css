@@ -1,9 +1,23 @@
 * {
-	border-style: dotted;
+	/* border-style: dotted;
 	border-width: 1px;
-	border-color: orange;
+	border-color: orange; */
 }
 
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+path:hover {
+    fill: #ff270a;
+    cursor: pointer;
+}
+
+g:hover {
+    fill: #006cc5;
+}
 #left-eye, #right-eye {
 	position: relative;
     animation-name: flash1;
@@ -11,8 +25,49 @@
     animation-iteration-count: infinite;
 }
 
-#the-big- piece, #big-piece-desktop {
-    position: relative;
+
+/* Tablet */
+.rotate-this {
+    animation-name: full-rotation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes full-rotation {
+    0% {
+        transform: translate(5px, 0px);
+    }
+    25% {
+      transform: translate(0px, -5px);
+    }
+    50% {
+      transform: translate(-5px, 0px);
+    }
+    75% {
+      transform: translate(0px, 5px);
+    }
+    100% {
+      transform: translate(5px, 0px);
+    }
+          
+}
+
+.rainbow-hand:hover {
+    transform-origin: right bottom; /* or 100% 100%, same thing */
+    transform:
+      rotate(90deg)
+      rotate(90deg)
+}
+
+/* Flashing sections */
+
+.animate-rainbow {
+    animation-name: rainbow1;
+    animation-duration: 150ms;
+    animation-iteration-count: infinite;
+}
+
+.animate-flash {
     animation-name: flash2;
     animation-duration: 100ms;
     animation-iteration-count: infinite;
@@ -30,45 +85,54 @@
 
 @keyframes flash1 {
     0%   {fill:black;}
-
     100%   {fill:white;}
-    
 }
 
 @keyframes flash2 {
     0%   {fill:white;}
-
     100%   {fill:black;}
-    
 }
-
-
-
-
-
-
-.folsom-street-flag {
-
-}
-
 
 #muteButton {
-/*  z-index: 500;*/
-  width: 100%;
+  display: flex;
   height: 5vh; 
-  text-align: center;
+  width: 100%;
+  cursor: pointer;
 }
   #muteButton svg {
     position: relative;
     top: 2vh;
     z-index: 500;
-    right: 0;
-    width: 15%;
-    height: 3vh; }
+    width: 100%;
+    height: 3vh;
+}
   #muteButton #muteLine {
-    transition: all .25s ease-in-out; }
+    transition: all .25s ease-in-out; 
+}
+
   #muteButton #muteLine.hidden {
-    opacity: 0; }
+    opacity: 0; 
+}
+
+.link-container {
+    display: flex;
+    text-align: center;
+    margin: auto;
+}
+
+.event-link {
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.event-link:hover {
+    color: #ff270a;
+}
 
 @media screen and (min-width : 1px) and (max-width: 767px){
 
