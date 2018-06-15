@@ -118,7 +118,9 @@ g:hover {
     display: flex;
     text-align: center;
     margin: auto;
+    padding: 0;
 }
+
 
 .event-link {
     display: flex;
